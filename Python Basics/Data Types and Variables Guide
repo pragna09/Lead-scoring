@@ -1,0 +1,132 @@
+Introduction to Python Data Types
+Today, we're going to dive into one of the most important concepts in Python: Data Types and Variables. Understanding how data is stored and manipulated in Python is the foundation of writing efficient programs. So, let’s explore Python's built-in data types, variables and how they help us in coding💡.
+
+What are Data Types and Variables?
+In Python, data types define the kind of value a variable can hold. A variable is just a name that refers to a value stored in memory. The type of data a variable stores is crucial because it determines what operations you can perform on it.
+
+Here are some rules for naming a variable:
+
+Character set: Variable names can contain uppercase and lowercase letters, digits, and the underscore character, but the first character must be a letter or underscore.
+Case sensitivity: Variable names are case-sensitive, so age, Age, and AGE are all different variables.
+Reserved keywords: Avoid using Python's reserved keywords, like if, for, while, def, and class, as variable names. Using these keywords can cause syntax errors and unexpected behavior.
+Spaces: Variable names cannot contain spaces.
+Special characters: Variable names cannot contain special characters.
+
+
+1.What is the output of the following code?
+x = 10
+y = 3.14
+z = x + y
+print(type(z))
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'complex'>
+Sol: solution is <class 'float'>
+
+2. What is the data type of num = "10"
+Integer
+String
+Float
+Boolean
+Sol: String
+
+3. Which is the correct way of defining a string variable
+age = TRUE
+age = "Ten"
+age = 10
+string age = 10
+Sol: The correct solution is age = "Ten"
+
+4. What will int('10.5') return?
+10
+10.5
+Error
+0
+Sol: Error.
+
+5. Which is a valid variable name?
+2variable
+_variable
+break
+class
+Sol: _variable
+
+6. What will be the output of the given python code?
+x = 10
+y = "20"
+print(x + int(y))
+Error
+10
+30
+1020
+Sol: 30
+
+7. Which function is used to check the type of a variable?
+typeof()
+checktype()
+type()
+isType()
+Sol: type()
+
+8. Which of the following is NOT a valid string declaration?
+greeting = 'Hello'
+greeting = "Hello"
+greeting = '''Hello'''
+greeting = Hello
+Sol: greeting = Hello
+
+9. What is the result of (0.1 + 0.2 == 0.3)?
+True
+False
+None
+Error
+Sol: False
+
+10. What will print(5+True) result in?
+6
+5
+TypeError
+ValueError
+Sol: 6. 
+
+11. What will be output of following python code?
+print('2' * 3)
+6
+'6'
+'222'
+TypeError
+Sol: '222'
+
+ 12. What will the given python code evaluate to?
+x = True
+y = False
+print(x + y)
+1
+0
+True
+2
+Sol: 1 
+
+13. What will be the output of the given python code?
+z = 10
+print(isinstance(z, int))
+True
+False
+Error
+10
+Sol: True
+
+14. What does the isinstance() function return?
+An integer (0 or 1)
+An object type
+A boolean (True or False)
+None
+Sol: A boolean (True or False)
+
+15. What will be print(isinstance(str(42), str)) return?
+True
+False
+Error
+None
+Sol: True.
