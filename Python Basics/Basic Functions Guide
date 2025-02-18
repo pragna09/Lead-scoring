@@ -1,0 +1,89 @@
+Functions are at the heart of writing clean, reusable, and organized code in Python. Think of them as your personal code assistants. Instead of repeating the same steps throughout your program, you define a function once and call it whenever you need that functionality. This project will teach you the basics of defining, calling, and understanding functions, as well as best practices like using docstrings and type annotations.
+
+By the end of this guide, you will know how to:
+
+Create your own functions.
+Understand the difference between parameters and arguments.
+Use the return statement to send values back from functions.
+Recognize the scope of variables (local vs. global).
+Write clear, documented, and typed functions.
+What Are Functions and Why Use Them?
+A function is a block of code that you define once and can reuse multiple times. Functions help break down large problems into smaller, manageable pieces. Without functions, your code can become repetitive, harder to understand, and more difficult to maintain.
+
+Functions make your code:
+
+Organized: Group related code into logical chunks.
+Reusable: Write once, call many times.
+Clear: A well-named function communicates what it does.
+
+1.Which keyword is used to define a function?
+
+Select the correct keyword used to define a function in Python from the following options:
+define
+func
+def
+function
+sol:def
+
+2.What value does it return by default?
+
+If a function does not have a return statement, what value does it return by default?
+0
+It will throw an error
+None
+True
+False
+sol:none
+
+3.Personalized Greeting
+
+Create a function greet_user(name: str) -> str that takes a name as an argument and returns a personalized greeting message as shown below.
+
+Expected outcome:
+
+The function should return a greeting message with the given name.
+
+def greet_user(name: str) -> str:
+    return "Hello, "+name+"!"
+
+4.What’s the difference between parameters and arguments in a function?
+Arguments are always integers, parameters are always strings.
+sol:Parameters are the placeholders listed in the function definition; arguments are the actual values you pass to the function when calling it.
+Parameters are the values passed to the function when calling it, while arguments are defined inside the function.
+Arguments and parameters mean the same thing in Python.
+
+5.What is the correct output?
+
+Below is the code snippet:
+
+message = "Now you are at activity number 5"
+
+def change_message() -> str:
+    message = "Next activity is number 6"
+    return message
+
+print(change_message())
+print(message)
+
+sol:Next activity is number 6
+Now you are at activity number 5
+
+
+6.Rectangle Area Calculator
+Create a function rectangle_area(width: float, height: float) -> float that calculates the area of a rectangle given its width and height. The function should return the area as a floating-point number.
+
+def rectangle_area(width: float, height: float) -> float:
+    return width*height
+
+7.In Python, code inside a function must be
+
+Select the correct option:
+sol:Indented consistently (commonly 4 spaces) after the def line
+Indented by at least one space
+Indented by exactly two spaces
+Aligned with the left margin
+
+8.Currency Converter
+Create a function convert_currency(amount: float, rate: float) -> float that converts an amount from one currency to another using the given exchange rate. The function should return the converted amount as a floating-point number.
+def convert_currency(amount: float, rate: float) -> float:
+    return amount*rate
