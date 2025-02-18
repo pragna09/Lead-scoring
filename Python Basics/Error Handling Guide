@@ -1,0 +1,106 @@
+1.What type of error occurs when you try to divide by zero in Python?
+Logical Error
+Syntax Error
+Indentation Error
+sol:Runtime Error
+
+2.Which of the following represents a Syntax Error?
+sol:if x == 5 print("x is five")
+average = sum(numbers) / len(numbers) + 1
+print(5 / 0)
+y = int("hello")
+
+3.What will be output of given python code?
+if True Print("Hello")
+
+Print "Hello"
+Empty String
+sol:Syntax Error
+Logical Error
+
+4.What type of error might this code produce result = (10 + 5) / 3 + 1 if result is expected to be 5?
+Syntax Error
+sol:Logical Error
+Runtime Error
+TypeError
+
+5.Which among the following will raise Syntax Error?
+x = 5
+sol:print("Result":)
+print(10/0)
+for i in range(10): print(i)
+
+6.What type of error occurs when trying to read a file that does not exist?
+Logical Error
+Indentation Error
+sol:Runtime Error
+Syntax Error
+
+7.You wrote a program that asks users for a number, but the user enters a string instead. How can you handle potential errors?
+sol:Use a try/except block to catch ValueError
+Use an if statement to check if it's a number
+Just let the program crash
+None of the above
+
+8.During arithmetic operations, if you accidentally multiply a float with a string, which error will occur? How can you prevent this?
+sol:TypeError; use try/except to catch it
+IndentationError; adjust spacing
+NameError; check variable names
+SyntaxError; change the code format
+
+9.What will be output of following code?
+def add_numbers(x,y):
+    return x+y
+print(add_numbers("5",7))
+"5" + 7
+57
+12
+sol:TypeError
+
+10.What is the purpose of an else block in a try-except structure?
+sol:To execute code only if no exceptions occur
+To handle all types of exceptions
+To provide cleanup actions
+It has no purpose and is optional
+
+11.What does the finally block guarantee in Python?
+It executes only when no exceptions are raised
+It runs only if the try block has no errors
+sol:It guarantees that the code runs regardless of whether an exception occurred or not.
+It guarantees that the code runs before exceptions are raised
+
+12.Which of the following is not a built-in exception in Python?
+sol:OutOfMemoryError
+ImportError
+AttributeError
+ValueError
+
+13.When handling exceptions, what happens if an exception occurs inside an except block but there is no subsequent try block to catch it?
+The program handles the second exception automatically
+It raises a warning but does not stop execution
+The program continues executing the next line after the except block
+sol:The program terminates and prints the traceback
+
+14.Which of the following statements correctly describes how to handle an IndentationError?
+Indentation errors can be ignored without consequences
+sol:Correct the indentation in the code before running it
+Wrap the code in a try-except block to catch it
+Use a default value when the error occurs
+
+15.Which of the following statements about finally blocks is false?
+sol:A finally block can be skipped if there is an unhandled exception
+You cannot have a finally block without a corresponding try block
+The finally block will execute even if a return statement is encountered in the try block
+A finally block executes regardless of whether an exception is raised
+
+16.Select the correct output of this code
+It will give a syntax error
+It will terminate immediately if a negative number is entered
+sol:It will print an error message if a negative number (other than -1) is entered, and continue asking for input until -1 is entered
+It will print nothing and exit the program
+
+17.Select the correct output of this code
+It will give a syntax error
+It will terminate immediately if a negative number is entered
+It will print an error message if a negative number (other than -1) is entered, and continue asking for input until -1 is entered
+sol:It will print nothing and exit the program
