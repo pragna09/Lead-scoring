@@ -1,0 +1,38 @@
+Laplace's Law
+Laplace's Law, named after the renowned French mathematician Pierre-Simon Laplace, is a fundamental principle in the field of probability theory. This law provides a straightforward method for calculating the probability of an event when all outcomes in the sample space are equally likely. The essence of Laplace's Law can be encapsulated in the formula:
+
+P=Favorable Cases/Possible Cases
+Possible Cases: These are all the possible outcomes that can be obtained in an experiment. For example, if the experiment is rolling a die, we will have 6 possible cases because a die only has 6 faces.
+Favorable Cases: These are the outcomes that occur in each experiment in a sequential manner, meaning the results are exclusive: if one outcome occurs, the others cannot. In the experiment of rolling a die, each face of the die is a favorable case. In other words, getting a two (2) or a five (5) are examples of favorable cases in the experiment of throwing a die.
+According to this law, the probability (P) of an event occurring is determined by dividing the number of favorable cases (those outcomes that satisfy the event conditions) by the total number of possible cases in the sample space (all conceivable outcomes of the experiment). Laplace's Law assumes that each outcome in the sample space is equally probable, which means that no single outcome is favored over another.
+This principle is particularly useful in scenarios where it's feasible to clearly enumerate all possible outcomes of an experiment, such as rolling a fair die, flipping a fair coin, or drawing cards from a well-shuffled standard deck. Through its simplicity and elegance, Laplace's Law lays the groundwork for understanding more complex probability theories and models.
+
+1.What is the probability of rolling a 4 on a fair six-sided die using Laplace's Law?
+1/2
+sol:1/6
+1/4
+1
+
+2.Using Laplace's Law, what is the probability of drawing an Ace from a standard 52-card deck?
+1/26
+sol:1/13
+sol:4/52
+1/52
+
+3.According to Laplace's Law, what is the probability of flipping two coins and both landing on heads?
+sol:1/4
+2/4
+1/2
+1/8
+
+4.If a bag contains 3 red balls and 2 blue balls, what is the probability of randomly choosing a red ball, according to Laplace's Law?
+3/2
+2/5
+1/5
+sol:3/5
+
+5.What is the probability of rolling an even number on a fair six-sided die?
+1/4
+sol:1/2
+1/6
+1/3
