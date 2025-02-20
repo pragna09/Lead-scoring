@@ -1,0 +1,91 @@
+Exploring Sample Space, Events, and Random Variables with Python
+In this project, we'll explore foundational concepts of probability theory: sample space, events, and random variables. These concepts are essential for analyzing uncertainty and are widely applied in fields like statistics, machine learning, and decision-making. The sample space represents all possible outcomes of an experiment, events are subsets of the sample space, and random variables assign numerical values to outcomes. By understanding these ideas and applying them in real-world scenarios, we can better quantify and model uncertainty.
+
+Sample Space
+Definition and Importance:
+The sample space, denoted by S, of a random experiment is the set of all possible outcomes of that experiment. It forms the basis for understanding the likelihood of various events occurring within the experiment. Understanding the sample space is crucial in probability theory as it allows us to define events and calculate probabilities associated with those events.
+
+1.How do you calculate the Size of a Sample Space?
+By taking the mean of the outcomes
+By dividing the total number of outcomes by the number of events
+sol:The size of a sample space is determined by counting the number of distinct and equally likely outcomes in a given experiment.
+By summing the probabilities of all events
+
+2.What is the sample space for rolling a fair four-sided die?
+{1, 2, 3, 4, 5}
+sol:{1, 2, 3, 4}
+{1, 2}
+{1, 2, 3}
+
+3.When flipping a fair coin twice, what is the size of the sample space?
+2
+sol:4
+3
+1
+
+4.In a standard deck of playing cards, what is the size of the sample space when drawing a single card?
+2
+26
+sol:52
+13
+
+5.The aim of this activity is to understand the concept of sample space and practice estimating the sample space for different experiments using Python.
+let's use the provided function to estimate the sample space for rolling a fair six-sided die 2 times. What is the size of the sample space?
+
+def calculate_sample_space_size(num_sides, num_rolls):
+    """
+    Function to calculate the size of the sample space for rolling a die multiple times.
+
+    Parameters:
+    - num_sides: Number of sides on the die.
+    - num_rolls: Number of times the die is rolled.
+
+    Returns:
+    - Size of the sample space.
+    """
+    return num_sides ** num_rolls
+sol:36
+
+6.Identify the Correct Description of Event A and B
+
+If you were to randomly select a card from a well-shuffled standard deck of 52 playing cards, where event B denotes that the selected card is a heart, and event A denotes that the card selected is an ace, which description would correctly define both the events A and B?
+Set containing all heart cards and all ace cards regardless of their suits.
+sol:Set containing only the ace of hearts card.
+Set containing only ace hearts.
+Set containing only ace cards.
+
+7.Analyze the Experiment Tossing Three Coins
+
+Consider the experiment of tossing three coins. Describe the event 'at least two heads occurs'. Denote heads as H and tails as T.
+{HHH,TTT,THT,TTH,TTH,HTH,THH,HHT}
+{HTH,THH}
+{HTH,THH,HHT}
+sol:{HHH,HTH,THH,HHT}
+
+8.Consider the experiment of rolling a fair six-sided die twice. Describe the event 'the sum of the two rolls is greater than 9.' Denote the outcomes as the numbers rolled on the first and second dice.
+{ (5,6), (6,5) }
+{ (1,1), (2,2), (3,3), (4,4), (5,5), (6,6) }
+{ (5,5), (5,6), (6,4), (6,5), (6,6) }
+sol:{ (4,6), (5,5), (5,6), (6,4), (6,5), (6,6) }
+
+9.In an experiment where four horses named A, B, C, and D are made to contest a race, describe the event 'the winner is not C'
+{ A,B,C }
+sol:{ A,B,D }
+{ C }
+{ C,D }
+
+10.A variable whose possible values are numerical outcomes of a random phenomenon is termed...
+Event
+Variable
+Sample space
+sol:Random Variable
+
+11.A random variable assigns a random number to each possible outcome of an experiment.
+True
+sol:False
+
+12.Random variables that can assume only a countable number of values are called...
+Real
+sol:Discrete
+Random
+Continuous
