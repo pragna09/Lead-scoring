@@ -1,0 +1,28 @@
+1.Decide whether a continuous (C) random variable is the best for each of the following variables:
+sol:The temperature of a cup of coffee served at a restaurant.
+sol:The volume of gasoline that is lost to evaporation during the filling of a gas tank.
+Number of heads when flipping three coins.
+sol:The time until a projectile returns to Earth.
+
+2.Identify the type of random variable and the set of possible values for each random variable. (Make a reasonable estimate based on experience, where necessary.)
+The number of heads in two tosses of a coin.
+sol:Discrete random variables
+Continuous random variables
+
+3.Identify the type of random variable and the set of possible values for each random variable. (Make a reasonable estimate based on experience, where necessary.)
+The amount of liquid in a 12 -ounce can of soft drink.
+sol:Continuous random variables
+Discrete random variables
+
+4.Consider a game where a fair six-sided die is rolled.
+Complete the function and run it in the notebook. The function should return a random integer between 1 and 6 (both inclusive).
+
+sol:
+def roll_die():
+    return np.random.randint(1,7)
+
+
+5.Consider a scenario where a coin is flipped.Complete the function and execute it in the notebook. The function should return 0 or 1.
+sol:
+def flip_coin():
+    return np.random.randint(0, 2)  # Generates a random integer between 0 and 1(inclusive)
