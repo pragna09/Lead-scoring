@@ -1,0 +1,27 @@
+1.Let equal the IQ of a randomly selected Datawars student. Assume X~ N(100,16^2) What is the probability that a randomly selected student has an IQ below 90?
+from scipy.stats import norm
+
+# Mean (mu) and standard deviation (sigma)
+mu = 100
+sigma = 16
+
+# Calculate the probability of having an IQ less than 90
+probability = norm.cdf(x=90, loc=mu, scale=sigma)
+
+print(f"The probability that a randomly selected student has an IQ below 90 is {probability:.4f}")
+sol:The probability that a randomly selected student has an IQ below 90 is 0.2660
+
+2.Assume that Z has a standard normal distribution. Determine P(Z>1.2)
+0.89
+sol:0.103
+
+3.Assume that Z has a standard normal distribution. Determine P(Z>−0.86)
+0.19
+sol:0.805
+
+4.If X is a normal random variable with parameters μ= 3 and σ^2= 9, find P(2<X<5)
+0.36
+0.37
+sol:0.74
+
+5.
