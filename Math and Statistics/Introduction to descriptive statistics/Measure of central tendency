@@ -1,0 +1,57 @@
+1.Ten patients at a doctor’s surgery wait for the following lengths of times to see their doctor. What are the mean, median, and mode for these data?
+Dataset= [5 mins, 20 mins, 28 mins, 2 mins, 5 mins,9 mins, 62 mins, 11mins, 16 mins, 5 mins]
+median 10.0
+mean 16.3
+mode 20
+mode 5
+mean 10.0
+mode 6
+# Define a list of numbers
+data = [5, 20, 28, 2, 5, 9, 62, 11, 16, 5]
+
+# Calculate the mean
+mean = sum(data) / len(data)
+print("Mean:", mean)
+
+# Calculate the median
+sorted_data = sorted(data)
+n = len(sorted_data)
+if n % 2 == 0:
+    median = (sorted_data[n // 2 - 1] + sorted_data[n // 2]) / 2
+else:
+    median = sorted_data[n // 2]
+print("Median:", median)
+
+# Calculate the mode
+c = Counter(data)
+mode = c.most_common(1)[0][0]
+print("Mode:", mode)
+
+2.Computing the Mean for the Datasaurus Dozen Dataset
+
+The "Datasaurus Dozen" dataset contains 13 datasets, each with a different shape but the same summary statistics. Import the datasaurus.csv using pandas as df.
+
+Once you have imported the dataset, you can compute the mean for each dataset.
+The mean is almost similar for all the dataset
+
+3.NYCflights13 data
+
+For this task, we will explore a real-world dataset. Load the dataset flights.csv and store it in the variable flights, which contains over 300,000 observations of flights departing NYC in 2013.
+
+We will focus on displaying a single variable, the arrival delay of flights in minutes
+
+The flight arrival delays are in minutes and negative values mean the flight was early.
+
+What are the mean, median, and mode for these data? Store them in f_mean, f_median, and f_mode.
+
+arr_delay = flights["arr_delay"].dropna()  # Remove missing values
+
+# Compute the mean, median, and mode
+f_mean = arr_delay.mean()     # Mean
+f_median = arr_delay.median() # Median
+f_mode = arr_delay.mode()[0]  # Mode (mode() returns a Series, we take the first value)
+
+# Print results
+print("Mean:", f_mean)
+print("Median:", f_median)
+print("Mode:", f_mode)
