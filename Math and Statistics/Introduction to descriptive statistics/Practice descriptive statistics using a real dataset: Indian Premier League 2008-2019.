@@ -1,0 +1,34 @@
+1.Did you find any missing value in the deliveries dataset?
+sol:Yes, there is 95% of missing values in three variables for the deliveries dataset
+No, data does not contain missing values
+
+2.Compute the average runs scored by each team during IPL 2008 - 2019 for the First Batting
+help: deliveries.inning equal to 1 to filter the first batting
+The average value for Rising Pune Supergiant is 162
+The average value for Sunrisers Hyderabad is 162
+The average value for Gujarat Lions is 148
+sol:The average value for Kochi Tuskers Kerala is 144
+
+3.Compute the mean, median and mode of the variable win_by_runs win_by_runs columns represent the margin in which a team has won against the opponent if the team batting first has won. Let's exclude all instances when win_by_runs = 0 and then compute the mean, median, and mode.
+mean = 25, median=31 and mode = 15
+sol:mean = 29.79, median= 22 and mode= 14
+mean = 22, median=39 and mode = 15
+
+4.Compute the mean and standard deviation of win_by_wickets
+Exclude all instances when win_by_wickets <= 0.
+mean = 3.35 and std= 3.38
+sol:mean = 6.23 and std= 1.82
+mean = 7.26 and std= 0.82
+mean = 16.23 and std= 2.82
+
+5.Which Venue(Stadium) has hosted the most number of matches?
+sol:Eden Gardens
+Kingsmead
+M. Chinnaswamy Stadium
+Sawai Mansingh Stadium
+
+6.In which season most number of matches had been played ?
+2008
+sol:2013
+2019
+2018
