@@ -1,0 +1,58 @@
+1.Calculate the first, second and third quantile of the variable average
+Q1= 1.5, Q2= 14.60 and Q3= 35.98
+sol:Q1= 8.0, Q2= 14.60 and Q3= 23.65
+Q1= 8.0, Q2= 14.60 and Q3= 35.98
+Q1= 1.5, Q2= 8.0and Q3= 35.98
+
+2.Plot a box-plot to identify potential outliers for the variable average
+Select the correct code.
+sns.boxplot(data=data,y='strikerate')
+sns.boxplot(data=data,hue='average')
+sol:sns.boxplot(data=data,y='average')
+
+3.Look for any data points that fall outside the whiskers of the boxplot, which represent the range of data within 1.5 times the interquartile range (IQR) above the upper quartile or below the lower quartile. Filter the dataset using the interquartile range for the variable 'average' and calculate the number of rows in the filtered dataframe.
+rows= 482
+sol:rows= 478
+rows= 479
+rows= 465
+
+code:
+# Import required libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the dataset
+df = pd.read_csv("your_dataset.csv")  # Replace with the actual file name
+
+# Step 1: Check for missing values
+print("Missing Values in Each Column:\n", df.isnull().sum())
+
+# Step 2: Drop rows with missing values
+df_cleaned = df.dropna()
+print(f"Dataset shape after dropping missing values: {df_cleaned.shape}")
+
+# Step 3: Compute quantiles for 'average' column
+Q1 = df_cleaned["average"].quantile(0.25)  # 25th percentile
+Q2 = df_cleaned["average"].median()        # 50th percentile (median)
+Q3 = df_cleaned["average"].quantile(0.75)  # 75th percentile
+
+print(f"\nQuartiles for 'average':\nQ1 (25%): {Q1}\nQ2 (Median): {Q2}\nQ3 (75%): {Q3}")
+
+# Step 4: Boxplot to Identify Outliers
+plt.figure(figsize=(8, 6))
+sns.boxplot(x=df_cleaned["average"])
+plt.title("Boxplot of 'average' to Identify Outliers")
+plt.show()
+
+# Step 5: Detect and Remove Outliers Using IQR Method
+IQR = Q3 - Q1
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+
+# Filter dataset to remove outliers
+df_filtered = df_cleaned[(df_cleaned["average"] >= lower_bound) & (df_cleaned["average"] <= upper_bound)]
+
+# Step 6: Count remaining rows after filtering outliers
+print(f"\nNumber of rows after filtering outliers: {df_filtered.shape[0]}")
